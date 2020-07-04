@@ -10,7 +10,7 @@ int main() {
 		getchar();
 		return -1;
 	}
-	char buf[0x666]{};
+	char buf[0x777]{};
 	memset(buf,0x3, 0x777);
 	buf[1] = 2;
 	//Stack overflow gs
